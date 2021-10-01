@@ -13,7 +13,7 @@ Webpack v4를 잘 사용하고 있었는데, `npm update`나 `install` 할 때�
 
 보안 경고 때문에 `npm audit fix --force`를 통해 강제로 v5로 업데이트를 하게되면 플러그인들이 꼬여서 구동이 안 되는 현상을 발견하여, 최초 설정(`npm init`)부터 차근차근 진행하였다.
 
-작업할 때 사용하고 있는 [webpack-base-template][link1] 기준으로 v4에서 v5로 버전업할 때 주요 변경점은 아래와 같았다.
+작업할 때 사용하고 있는 웹팩 템플릿(최하단 링크 참고) 기준으로 v4에서 v5로 버전업할 때 주요 변경점은 아래와 같았다.
 
 ### package.json
 
@@ -40,7 +40,7 @@ Webpack v5 대응을 위해 `webpack-dev-server` 플러그인 같은 경우에�
 
 그 외 플러그인들은 각각의 가이드 문서를 참고하면서 조금씩 변경이 이루어졌다.
 
-마이그레이션을 진행하면서 기존에 유용하게 사용했던 부분이 삭제/변경된 부분이 있었는데, html 안에 html을 include 해주던 기능을 사용할 수 없게 된 부분이 타격이 컸다. 해당 이슈에 불편해하는 사용자들을 깃헙에서 볼 수 있는데, 이 부분은 [개발 진행 중][link2]이다.
+마이그레이션을 진행하면서 기존에 유용하게 사용했던 부분이 삭제/변경된 부분이 있었는데, html 안에 html을 include 해주던 기능을 사용할 수 없게 된 부분이 타격이 컸다. 해당 이슈에 불편해하는 사용자들을 깃헙에서 볼 수 있는데, 이 부분은 [개발 진행 중][link1]이다.
 
 그리고 `${require('이미지경로')}` 이렇게 템플릿 리터럴(Template literals)로 표현식을 처리했던 부분을 `<%=require('이미지경로')%>` 이 형식으로 변경을 해야 했던 부분도 있었다. (생각보다 시간을 많이 소요했다;;)
 
@@ -50,7 +50,7 @@ Webpack v5 대응을 위해 `webpack-dev-server` 플러그인 같은 경우에�
 
 내가 사용하고 있는 Webpack 템플릿을 공유하며 마무리하겠다.
 
-<https://github.com/moonspam/webpack-base-template>
+[webpack-base-template][link2]
 
-[link1]: <https://github.com/moonspam/webpack-base-template>
-[link2]: <https://github.com/webpack-contrib/html-loader/issues/291>
+[link1]: <https://github.com/webpack-contrib/html-loader/issues/291>
+[link2]: <https://github.com/moonspam/webpack-base-template>
