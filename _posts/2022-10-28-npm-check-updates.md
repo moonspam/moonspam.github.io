@@ -24,8 +24,6 @@ npm install -g npm-check-updates
 
 업데이트가 필요한 프로젝트 경로로 가서 `ncu`라고 넣고 실행하면 아래와 같이 실행된다.
 
-> 💡 특정 패키지만 선택하여 업데이트 하려면 `ncu -i`를 이용
-
 ```console
 $ ncu
 Checking package.json
@@ -39,6 +37,37 @@ Checking package.json
  webpack               4.x  →      5.x
 
 Run ncu -u to upgrade package.json
+```
+
+> 💡 특정 패키지만 선택하여 업데이트 하려면 `ncu -i`를 이용  
+> 💡 그룹으로 묶어 업데이트 하려면 `ncu -i --format group`를 이용
+
+```console
+$ ncu -i --format group
+Upgrading package.json
+[====================] 40/40 100%
+
+? Choose which packages to update » 
+  ↑/↓: Select a package
+  Space: Toggle selection
+  a: Toggle all
+  Enter: Upgrade 
+
+Patch   Backwards-compatible bug fixes
+❯ (*) core-js                 ^3.26.0  →  ^3.26.1
+  (*) css-loader               ^6.7.1  →   ^6.7.2
+  (*) sass                    ^1.56.0  →  ^1.56.1
+  (*) vue-template-compiler   ^2.7.13  →  ^2.7.14
+
+Minor   Backwards-compatible features
+  (*) sass-loader             ^13.1.0  →  ^13.2.0
+  (*) webpack                 ^5.74.0  →  ^5.75.0
+
+Major   Potentially breaking API changes
+  ( ) axios                   ^0.27.2  →   ^1.1.3
+  ( ) vue                     ^2.7.13  →  ^3.2.45
+  ( ) vue-loader             ^15.10.0  →  ^17.0.1
+  ( ) vue-router               ^3.6.5  →   ^4.1.6
 ```
 
 해당 버전으로 업데이트를 진행하고 싶으면 `ncu -u`로 package.json 파일 수정
