@@ -7,8 +7,6 @@ tags: [OpenClaw, Gemini, Ollama, Automation]
 thumbnail: /images/posts/mango-build.jpg
 ---
 
-![OpenClaw 구축 중](/images/posts/mango-build.jpg)
-
 ## 1. 프롤로그: 왜 나만의 AI 비서가 필요했는가?
 
 단순한 챗봇의 시대는 지났습니다. 이제는 나의 일정과 메일을 관리하고, 내가 사용하는 도구들을 직접 제어하는 '에이전트'의 시대입니다. **OpenClaw**는 바로 그런 상상을 현실로 만들어주는 강력한 오픈소스 개인용 AI 비서 프레임워크입니다. 
