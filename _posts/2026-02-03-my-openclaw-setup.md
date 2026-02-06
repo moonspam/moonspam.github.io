@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "[OpenClaw 구축기] 나만의 유능한 AI 비서 '망고'를 만들다"
+title: "[OpenClaw 구축기] 나만의 유능한 AI 비서 망고를 만들다"
 date: 2026-02-03
 categories: [AI, OpenClaw]
 tags: [OpenClaw, Gemini, Ollama, Automation]
 thumbnail: /images/posts/mango-build.jpg
 ---
 
-요즘 핫한 오픈소스 AI 에이전트인 OpenClaw를 기웃거리다 나만의 비서 '망고'를 구축해보기로 했다. 삽을 들고 일상을 자동화해본 생생한 삽질기를 정리해본다.
+요즘 핫한 오픈소스 AI 에이전트인 OpenClaw를 기웃거리다 나만의 비서 망고를 구축해보기로 했다. 삽을 들고 일상을 자동화해본 생생한 삽질기를 정리해본다.
 
 ## 1. 왜 나만의 AI 비서가 필요했는가?
 
