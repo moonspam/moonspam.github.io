@@ -4,6 +4,7 @@ title: "OpenClaw 구축기: '망고'의 희생으로 탄생한 하이브리드 �
 date: 2026-02-06 18:00:00 +0900
 categories: [AI, OpenClaw]
 tags: [OpenClaw, AI-Assistant, Gemini, Llama, Automation]
+thumbnail: /images/posts/luna-build.jpg
 ---
 
 # 🚀 OpenClaw 구축기: '망고'에서 '루나'까지의 대여정
