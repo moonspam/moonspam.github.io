@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenClaw 구축기: 망고의 희생으로 탄생한 하이브리드 비서 루나의 여정"
-date: 2026-02-06 18:00:00 +0900
+date: 2026-02-06
 categories: [AI, OpenClaw]
 tags: [OpenClaw, AI-Assistant, Gemini, Llama, Automation]
 thumbnail: /images/posts/luna-build.jpg
