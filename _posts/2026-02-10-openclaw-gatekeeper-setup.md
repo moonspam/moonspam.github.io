@@ -66,6 +66,7 @@ update_stamping() {
 보안상 문제가 될 수 있는 개인 정보는 제외한, 실제 운영 중인 전체 코드의 구조이다. 이 스크립트 하나가 루나의 모든 스케줄을 완벽하게 통제하고 있다.
 
 ```bash
+# heartbeat_gatekeeper.sh
 #!/bin/bash
 
 # 1. 경로 및 환경 설정
