@@ -1,8 +1,8 @@
----
 layout: post
 title: "[OpenClaw 구축기] AI 비서의 '가스비'를 아껴라! 게이트키퍼(Gatekeeper) 도입 삽질기"
-date: 2026-02-10 14:55:00 +0900
-categories: OpenClaw
+date: 2026-02-10
+categories: [AI, OpenClaw]
+tags: [OpenClaw, AI-Assistant, Gemini, Llama, Automation]
 thumbnail: /images/posts/luna-sleepy.jpg
 ---
 
