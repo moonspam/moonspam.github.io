@@ -34,7 +34,42 @@ thumbnail: /images/posts/luna-sleepy.jpg
 
 1.  **1분 단위 감시 (Crontab):** 리눅스 시스템이 1분마다 `heartbeat_gatekeeper.sh`를 실행하여 현재 시각을 체크한다.
 2.  **도장 확인 및 선 도장 (Pre-stamping):** `heartbeat-state.json` 파일(루나의 숙제장)을 열어 이번 시간대에 이미 작업을 했는지 확인한다. 만약 안 했다면 작업을 시작하기 **직전에** 즉시 완료 도장을 먼저 찍어버린다. 이렇게 해야 루나가 브리핑을 준비하는 동안 중복 호출되는 '배달 사고'를 원천 차단할 수 있다.
+
+```bash
+# 게이트키퍼의 핵심 로직: 선 도장(Pre-stamping) 함수
+update_stamping() {
+    local key=$1
+    local value=$2
+    local tmp_file=$(mktemp)
+    # jq를 사용해 JSON 상태 파일에 현재 날짜/시각을 기록
+    jq "$key = \"$value\"" "$STATE_FILE" > "$tmp_file" && mv "$tmp_file" "$STATE_FILE"
+}
+```
+
+그리고 루나의 '숙제장'인 JSON 파일은 아래와 같이 아주 심플하게 관리된다.
+
+```json
+{
+  "lastChecks": {
+    "email": "2026-02-10 15",
+    "dailyBriefing": "2026-02-10",
+    "weeklyHealthcheck": "2026-02-07",
+    "notionLog": "2026-02-09"
+  }
+}
+```
+
 3.  **격리된 세션 실행 (Isolated Execution):** 루나를 깨울 때 기존 대화가 가득 찬 방이 아닌, 아주 깨끗하게 치워진 '새 방(Isolated Session)'으로 부른다. 덕분에 17만 개나 쌓여있던 토큰 부담에서 벗어나 아주 가볍고 빠르게 업무를 처리할 수 있게 되었다.
+
+```bash
+# 데일리 브리핑 실행 예시 (오전 8시)
+# 이미 도장이 찍혔는지 확인 후, 안 찍혔다면 루나 소환!
+if [[ $CURRENT_HOUR -eq 8 && "$CURRENT_DATE" != "$LAST_BRIEFING" ]]; then
+    update_stamping ".lastChecks.dailyBriefing" "$CURRENT_DATE"
+    # 깨끗한 격리 세션에서 루나에게 브리핑 요청
+    $OPENCLAW agent --agent main --message "오늘의 소식을 보고해줘"
+fi
+```
 
 ### 3. '09의 저주'와 텔레그램 배달 사고
 
