@@ -61,14 +61,52 @@ update_stamping() {
 
 3.  **격리된 세션 실행 (Isolated Execution):** 루나를 깨울 때 기존 대화가 가득 찬 방이 아닌, 아주 깨끗하게 치워진 '새 방(Isolated Session)'으로 부른다. 덕분에 17만 개나 쌓여있던 토큰 부담에서 벗어나 아주 가볍고 빠르게 업무를 처리할 수 있게 되었다.
 
+### 2.2 게이트키퍼 전체 코드 (heartbeat_gatekeeper.sh)
+
+보안상 문제가 될 수 있는 개인 정보는 제외한, 실제 운영 중인 전체 코드의 구조이다. 이 스크립트 하나가 루나의 모든 스케줄을 완벽하게 통제하고 있다.
+
 ```bash
-# 데일리 브리핑 실행 예시 (오전 8시)
-# 이미 도장이 찍혔는지 확인 후, 안 찍혔다면 루나 소환!
+#!/bin/bash
+
+# 1. 경로 및 환경 설정
+WORK_DIR="$HOME/.openclaw/workspace"
+STATE_FILE="$WORK_DIR/memory/heartbeat-state.json"
+OPENCLAW="/usr/bin/openclaw"
+LOG_FILE="$HOME/.openclaw/gatekeeper.log"
+
+# 2. 현재 시각 정보 (10#을 붙여 8진수 오류 방지)
+CURRENT_TIME_STR=$(date +"%Y-%m-%d %H")
+CURRENT_DATE=$(date +"%Y-%m-%d")
+CURRENT_HOUR=$((10#$(date +"%H")))
+CURRENT_DOW=$(date +"%u")
+
+# 3. 상태 업데이트 함수 (선 도장 로직)
+update_stamping() {
+    local key=$1
+    local value=$2
+    local tmp_file=$(mktemp)
+    jq "$key = \"$value\"" "$STATE_FILE" > "$tmp_file" && mv "$tmp_file" "$STATE_FILE"
+}
+
+# 4. 상태 로드
+LAST_RESTART=$(jq -r '.lastChecks.dailyRestart // empty' "$STATE_FILE")
+LAST_BRIEFING=$(jq -r '.lastChecks.dailyBriefing // empty' "$STATE_FILE")
+# ... 생략 ...
+
+# 5. 작업 판단 및 실행
+# 데일리 브리핑 (오전 8시)
 if [[ $CURRENT_HOUR -eq 8 && "$CURRENT_DATE" != "$LAST_BRIEFING" ]]; then
     update_stamping ".lastChecks.dailyBriefing" "$CURRENT_DATE"
-    # 깨끗한 격리 세션에서 루나에게 브리핑 요청
-    $OPENCLAW agent --agent main --message "오늘의 소식을 보고해줘"
+    $OPENCLAW agent --agent main --message "데일리 브리핑 해줘 (Telegram: <YOUR_ID>)" --timeout 600
 fi
+
+# 매시 정기 메일 체크 (09:00 ~ 22:00)
+if [[ "$CURRENT_TIME_STR" != "$LAST_EMAIL" && $CURRENT_HOUR -ge 9 && $CURRENT_HOUR -le 22 ]]; then
+    update_stamping ".lastChecks.email" "$CURRENT_TIME_STR"
+    $OPENCLAW agent --agent main --message "메일 요약해줘 (Telegram: <YOUR_ID>)" --timeout 300
+fi
+
+exit 0
 ```
 
 ### 3. '09의 저주'와 텔레그램 배달 사고
