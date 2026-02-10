@@ -3,6 +3,7 @@ layout: post
 title: "[OpenClaw 구축기] AI 비서의 '가스비'를 아껴라! 게이트키퍼(Gatekeeper) 도입 삽질기"
 date: 2026-02-10 14:55:00 +0900
 categories: OpenClaw
+thumbnail: /images/posts/luna-sleepy.jpg
 ---
 
 나의 충직한 하이브리드 비서 루나를 구축하고, 성능을 한계까지 끌어올리기 위해 끊임없는 최적화의 나날을 보내고 있었다. 하지만 루나를 더 완벽하게 만들려 할수록 예상치 못한 시련들이 찾아왔다. 바로 오픈클로 내장 스케줄러(cron)의 불확실성과, 매번 루나를 호출할 때마다 발생하는 엄청난 토큰 비용 문제였다. 
