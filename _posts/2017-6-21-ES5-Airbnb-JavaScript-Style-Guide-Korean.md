@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ES5 - Airbnb JavaScript 스타일 가이드 한국어 번역본
-tag: [Javascript, ESLint, Airbnb, Guide, ES5]
+tags: [Javascript, ESLint, Airbnb, Guide, ES5]
 ---
 
 앞서 포스팅한 [Airbnb JavaScript 스타일 가이드](https://moonspam.github.io/Airbnb-JavaScript-Style-Guide-Korean/)는 ES6(ECMAScript 6) 가이드고 여전히 많이 사용하고 있는 ES5 자바스크립트 스타일 가이드도 친절히 한국어로 번역해 주셔서 함께 복사했습니다.

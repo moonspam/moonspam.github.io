@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 구글 크롬 자동재생 미디어 정책 변경 내용 공유 
-tag: [API, Chrome, YouTube]
+tags: [API, Chrome, YouTube]
 ---
 
 2018년 4월부터 크롬 브라우저에서 페이지 로딩 시 영상 자동재생(autoplay)이 못하도록 정책이 변경되었습니다. 갑자기 나오는 영상 때문에 심장 어택을 방지하려고 추가된 정책 같습니다.

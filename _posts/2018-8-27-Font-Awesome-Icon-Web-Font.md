@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Awesome 아이콘 세트 소개
-tag: [Fonts, FontAwesome]
+tags: [Fonts, FontAwesome]
 ---
 
 아이콘에 인터렉티브한 효과를 줄 경우 `SVG` 또는 `Base64`로 일일이 만들어 사용하는 경우가 있는데, 이 부분을 해결해줄 서비스가 있어 소개합니다.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 웹팩(Webpack) v4에서 v5로 마이그레이션
-tag: [Webpack, Migration]
+tags: [Webpack, Migration]
 ---
 
 Webpack v4를 잘 사용하고 있었는데, `npm update`나 `install` 할 때마다 플러그인들이 지원을 종료했다고 메시지가 나오고 보안 관련 부분에서 `high` 이상의 문제가 자꾸 발생하여 원만한 유지보수를 위해 v5로 마이그레이션 작업을 진행하였다.

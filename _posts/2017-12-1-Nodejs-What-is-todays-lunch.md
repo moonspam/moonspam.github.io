@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 점심 뭐 먹지? 제작기
-tag: [Javascript, Nodejs]
+tags: [Javascript, Nodejs]
 ---
 
 인간으로 태어나 가장 큰 고민거리인 **오늘 점심 뭐 먹지?** 에 대한 고민을 해결하기 위해 만들어 보았습니다.  

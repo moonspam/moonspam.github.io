@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 스로틀(throttle)과 디바운스(debounce)
-tag: [Javascript, Lodash, Underscore]
+tags: [Javascript, Lodash, Underscore]
 ---
 
 *["자바스크립트 코딩 면접에서 알고 있어야 할 3가지 질문"](https://joshua1988.github.io/web_dev/javascript-interview-3questions/)* 포스팅을 보고 **디바운싱**(debouncing)에 대한 부분에서 무릎을 탁!!! 하고 쳤습니다.  

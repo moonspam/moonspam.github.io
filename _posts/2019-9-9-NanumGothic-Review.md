@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 나눔 고딕 웹 폰트에 대한 고찰
-tag: [NanumGothic, Fonts]
+tags: [NanumGothic, Fonts]
 ---
 
 굴림과 돋움의 고인물이 될 무렵 나눔 고딕이 세상에 나오고 한글 웹 폰트의 부흥이 시작되었다는...  

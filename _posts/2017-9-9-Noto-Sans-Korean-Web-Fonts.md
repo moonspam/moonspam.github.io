@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 본고딕 웹폰트(Noto Sans CJK) 공유
-tag: [NotoSans, Fonts]
+tags: [NotoSans, Fonts]
 ---
 
 2014년 구글과 어도비(Adobe)와 합작으로 한중일 언어를 동시에 지원하는 본고딕(Noto Sans CJK)를 출시하였습니다. 개인적으로 나눔고딕 다음으로 많이 사용하고 있는 서체입니다.

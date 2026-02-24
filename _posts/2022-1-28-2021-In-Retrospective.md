@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 돌아보는 2021년
-tag: [Retrospective]
+tags: [Retrospective]
 ---
 
 2021년 회고를 쓰기 부끄럽게 1년이 후다닥 지나갔다. 한해를 돌아보고 틈틈이 삽질했던 것들도 여기에 정리해본다.

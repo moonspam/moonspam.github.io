@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 나눔바른고딕 경량화 웹폰트 공유
-tag: [NanumBarunGothic, Fonts]
+tags: [NanumBarunGothic, Fonts]
 ---
 
 요즘 나눔바른고딕을 사용하는 일이 많아져서 웹폰트가 있는지 찾아보니 구글 폰트에서 바른고딕은 없었고 github이나 무료 CDN에 종종 찾을 수 있었지만, 모바일 웹에서 사용하기엔 크나큰 용량이어서 직접 만들어 보았습니다.  

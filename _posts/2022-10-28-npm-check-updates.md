@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NPM 패키지 편하게 관리하자(npm-check-updates 사용법)
-tag: [Nodejs, NPM, Javascript]
+tags: [Nodejs, NPM, Javascript]
 ---
 
 NPM 패키지 업데이트할 때마다 뜨는 보안 경고 때문에 해당 패키지 GitHub 페이지로 들어가 새 업데이트가 없는지 정책이 바뀐 게 없는지 확인하는 것도 귀찮고 하나의 일이 돼버렸다.

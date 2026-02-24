@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue.js 자동완성 만들기
-tag: [Vuejs, Javascript]
+tags: [Vuejs, Javascript]
 ---
 
 2019년 목표였던 vue.js 다뤄보기를 하려고 노력한(?) 결과 프로젝트에서 검색창에 자동완성 되는 기능을 구현할 기회가 있었습니다.  

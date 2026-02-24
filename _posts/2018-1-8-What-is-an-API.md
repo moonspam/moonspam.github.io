@@ -1,7 +1,7 @@
 ---
 layout: post
 title: API 쉽게 이해하기
-tag: [API, Javascript]
+tags: [API, Javascript]
 ---
 
 개발자와 회의하다 보면 `API`라는 단어를 종종 듣게 됩니다. 공부 겸 `API`란 무엇인지 쉽게 풀어 정리해 보겠습니다.

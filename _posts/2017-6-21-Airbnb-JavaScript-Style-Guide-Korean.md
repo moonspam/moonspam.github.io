@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Airbnb JavaScript 스타일 가이드 한국어 번역본
-tag: [Javascript, ESLint, Airbnb, Guide, ES6]
+tags: [Javascript, ESLint, Airbnb, Guide, ES6]
 ---
 
 ESLint를 Airbnb 규칙으로 설정하는 부분이 있어 무작정 따라 했다가 내 손이 위험한 손인지 자꾸 경고 메시지를 날립니다. 착한 손이 되기 위해 찾아보니 [Airbnb 자바스크립트 스타일 가이드](https://github.com/airbnb/javascript)가 있었습니다. 또 더 찾아보니 영알못인 저를 위해 친절하게 한국어로 번역해주신 문서가 있어 ES6 공부 겸 슬며시 복사해봅니다.

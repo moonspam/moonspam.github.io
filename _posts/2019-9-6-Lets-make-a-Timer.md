@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue.js 타이머 만들기
-tag: [Vuejs, Javascript, Firebase]
+tags: [Vuejs, Javascript, Firebase]
 ---
 
 아내의 수유 시간 체크와 업무 중 자리 비운 시간을 체크하기 위해 토이 프로젝트로 `타이머`를 만들어 보았습니다.  
