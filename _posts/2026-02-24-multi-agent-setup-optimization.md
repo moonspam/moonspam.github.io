@@ -3,7 +3,7 @@ layout: post
 title: "멀티 에이전트 비서실 구축기: 4GB RAM과 무한 루프를 넘어 안정화로"
 date: 2026-02-24 17:30:00 +0900
 categories: [OpenClaw, AI]
-tags: [OpenClaw, Multi-Agent, API-Optimization, Automation, UTM]
+tags: [OpenClaw, MultiAgent, APIOptimization, Automation, UTM]
 image: /images/2026-02-24-multi-agent.jpg
 ---
 
