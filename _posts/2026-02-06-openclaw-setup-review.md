@@ -3,7 +3,7 @@ layout: post
 title: "[OpenClaw 구축기] 망고의 희생으로 탄생한 하이브리드 AI 에이전트 루나(Luna)의 업무 자동화 여정"
 date: 2026-02-06
 categories: [AI, OpenClaw]
-tags: [OpenClaw, AI에이전트, 로컬LLM, Llama3.2, 업무자동화, API비용절감, 텔레그램봇, Agentic AI]
+tags: [OpenClaw, AI-Agent, Local-LLM, Llama3.2, Automation, API-Optimization, Telegram-Bot, Agentic-AI]
 thumbnail: /images/posts/luna-build.jpg
 ---
 

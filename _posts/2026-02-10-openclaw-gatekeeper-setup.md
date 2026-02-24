@@ -3,7 +3,7 @@ layout: post
 title: "[OpenClaw 구축기] 토큰 폭탄 해결! 로컬 LLM과 게이트키퍼로 AI 에이전트 업무 자동화 비용 절감하기"
 date: 2026-02-10
 categories: [AI, OpenClaw]
-tags: [OpenClaw, AI에이전트, 업무자동화, 로컬LLM, Ollama, API비용절감, 텔레그램봇]
+tags: [OpenClaw, AI-Agent, Automation, Local-LLM, Ollama, API-Optimization, Telegram-Bot]
 thumbnail: /images/posts/luna-sleepy.jpg
 ---
 

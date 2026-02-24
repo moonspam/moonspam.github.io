@@ -3,7 +3,7 @@ layout: post
 title: "[OpenClaw 구축기] AI 에이전트로 나만의 유능한 개인용 AI 비서 망고(Mango) 만들기"
 date: 2026-02-03
 categories: [AI, OpenClaw]
-tags: [OpenClaw, AI에이전트, 개인용AI비서, 업무자동화, 로컬LLM, Ollama, Agentic AI]
+tags: [OpenClaw, AI-Agent, Personal-AI, Automation, Local-LLM, Ollama, Agentic-AI]
 thumbnail: /images/posts/mango-build.jpg
 ---
 
